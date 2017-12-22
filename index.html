@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="urf-8">
+	<title>AnimeWorld</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="/anime/syedzye-anime.css">
+</head>
+<body>
+	<div class="image">
+	<div class="video">
+		<iframe src="https://player.vimeo.com/video/54636133?background=1&loop=1&mute=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<div class="layer"></div>
+	</div>
+			
+	<div class="mainContent">
+		<h1>Тест для поклонников аниме</h1>
+		
+		<form action="javascript:console.log();" onsubmit="return validateFormOnSubmit(this);">
+		
+		<section>
+			<h2>Жанры</h2>
+			<ul>
+				<li class="radioContainer">
+					<input type="radio" class="radio" id="firstFirst" name="zhanr" value="fantastika"></input>
+					<label for="firstFirst">Фантастика</label>
+				</li>
+				<li class="radioContainer">
+					<input type="radio" class="radio" name="zhanr" id="firstSecond" value="uzasy"></input>
+					<label for="firstSecond">Ужасы</label>
+				</li>
+				<li class="radioContainer">
+					<input type="radio" class="radio" name="zhanr" id="firstThird" value="romantika"></input>
+					<label for="firstThird">Романтика</label>
+				</li>
+				<li class="radioContainer">
+					<input type="radio" class="radio" name="zhanr" id="firstFourth" value="boevik"></input>
+					<label for="firstFourth">Боевик</label>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Характер главного героя</h2>
+			<ul>
+				<li class="radioContainer">
+					<input type="radio" name="harakter" value="silnyi" id="secondFirst"></input>
+					<label for="secondFirst">Сильный</label>
+				</li>
+				<li class="radioContainer">
+					<input type="radio" name="harakter" value="slabyi" id="secondSecond"></input>
+					<label for="secondSecond">Слабый</label>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h2>По популярности</h2>
+			<ul>
+				<li class="radioContainer">
+					<input type="radio" name="populyarnost" value="vyshyi" id="thirdFirst"></input>
+					<label for="thirdFirst">Высший</label>
+					</li>
+				
+				<li class="radioContainer">
+					<input type="radio" name="populyarnost" value="sredniy" id="thirdSecond"></input>
+					<label for="thirdSecond">Средний</label>
+				</li>
+				<li class="radioContainer">
+					<input type="radio" name="populyarnost" value="nizshiy" id="thirdThird"></input>
+					<label for="thirdThird">Низший</label>
+				</li>
+			</ul>
+		</section>
+		<button type="submit" class="result-button">Результат</button>
+		</form>
+		</div>
+	</div>
+	
+
+	<img src="" class="image-result">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>
